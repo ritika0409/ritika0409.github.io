@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>JavaScript Form</title>      
+    </head>
+    <div class="box">
+        <form>
+            <input id="ans" placeholder="What's your name?" type="text" />
+            <p>Let's play a small quiz. Each correct answer is +5 points<br> and incorrect answer is -1 point </p>
+            <br>
+            <h3>What is the capital of Spain?</h1>
+            <input id="ans1"  type="text" />
+            <h3>Which river is the longest river in the world?</h1>
+            <input id="ans2" type="text" />
+            <h3>Which country has highest population in the world?</h1>
+            <input id="ans3" type="text" />
+            <h3>What is the capital of Sikkim?</h1>
+            <input id="ans4" type="text" />
+            <button type="button" onclick="enter()">Submit</button>
+            <p id="message"></p>
+        </form>
+      
+    </div>
+    <script>
+        var score=0;
+        var flag=1;
+        function game(id,answer){
+            if(document.getElementById(id).value==answer){
+                score=score+5;
+            }
+            else if(document.getElementById(id).value=="")
+                flag=0;
+            else
+                score=score-1;
+            
+        }
+        function enter(){
+            score=0;
+            var answers=[
+                {id:"ans1", answer:"Madrid"},
+                {id:"ans2", answer:"Nile"},
+                {id:"ans3", answer:"China"},
+                {id:"ans4", answer:"Gangtok"},
+            ];
+            for(var i=0;i<answers.length;i++){
+                game(answers[i].id,answers[i].answer);}
+
+            var name=document.getElementById("ans").value
+            var letters =/^[a-zA-Z]+$/;
+            if(!letters.test(name))
+				alert("Name not Validated..! Enter alphabetic value");
+            document.getElementById("message").innerHTML ="Hello "+name+". Your score is "+score;
+        }
+    </script>  
+</html>
