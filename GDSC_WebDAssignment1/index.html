@@ -26,7 +26,9 @@
     <script>
         var score=0;
         function game(id,answer){
-            if(document.getElementById(id).value.toLowerCase()==answer.toLowerCase()){
+	    var str=document.getElementById(id).value;
+	    str=str.toLowerCase();
+            if(str==answer){
                 score=score+5;
             }
             else
@@ -36,10 +38,10 @@
         function enter(){
             score=0;
             var answers=[
-                {id:"ans1", answer:"Madrid"},
-                {id:"ans2", answer:"Nile"},
-                {id:"ans3", answer:"China"},
-                {id:"ans4", answer:"Gangtok"},
+                {id:"ans1", answer:"madrid"},
+                {id:"ans2", answer:"nile"},
+                {id:"ans3", answer:"china"},
+                {id:"ans4", answer:"gangtok"},
             ];
             for(var i=0;i<answers.length;i++){
                 game(answers[i].id,answers[i].answer);}
