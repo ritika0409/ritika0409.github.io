@@ -25,13 +25,14 @@
     </div>
     <script>
         var score=0;
+	var str;
         function game(id,answer){
-	    var str=document.getElementById(id).value;
+	    str=document.getElementById(id).value;
 	    str=str.toLowerCase();
             if(str==answer){
                 score=score+5;
             }
-            else
+            else if(str)
                 score=score-1;
             
         }
