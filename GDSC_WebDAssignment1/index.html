@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>JavaScript Form</title>      
     </head>
     <div class="box">
@@ -24,24 +25,24 @@
     </div>
     <script>
         var score=0;
-        var flag=1;
+	var str;
         function game(id,answer){
-            if(document.getElementById(id).value==answer){
+	    str=document.getElementById(id).value;
+	    str=str.toLowerCase();
+            if(str==answer){
                 score=score+5;
             }
-            else if(document.getElementById(id).value=="")
-                flag=0;
-            else
+            else if(str)
                 score=score-1;
             
         }
         function enter(){
             score=0;
             var answers=[
-                {id:"ans1", answer:"Madrid"},
-                {id:"ans2", answer:"Nile"},
-                {id:"ans3", answer:"China"},
-                {id:"ans4", answer:"Gangtok"},
+                {id:"ans1", answer:"madrid"},
+                {id:"ans2", answer:"nile"},
+                {id:"ans3", answer:"china"},
+                {id:"ans4", answer:"gangtok"},
             ];
             for(var i=0;i<answers.length;i++){
                 game(answers[i].id,answers[i].answer);}
