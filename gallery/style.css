@@ -36,6 +36,7 @@ img {
     animation: var(--name) var(--duration) linear infinite;
     box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.5);
     z-index: -1;
+    opacity: 0.9;
 }
 @media only screen and (max-width: 600px) {
     img {
@@ -92,6 +93,18 @@ img:nth-child(16) {
 }
 img:nth-child(17) {
     animation-delay: 2s;
+}
+img:nth-child(18) {
+    animation-delay: -6s;
+}
+img:nth-child(19) {
+    animation-delay: 17s;
+}
+img:nth-child(20) {
+    animation-delay: 11s;
+}
+img:nth-child(21) {
+    animation-delay: 5s;
 }
 img:nth-child(1) {
     --name: float-up-1;
@@ -186,10 +199,40 @@ img:nth-child(15) {
 img:nth-child(16) {
     --name: float-up-1;
     --duration: calc(20s * 1);
-    left: -1px;
+    right: -3px;
     z-index: -1;
 }
 img:nth-child(17) {
+    --name: float-up-1;
+    --duration: calc(20s * 0.8);
+    left: 59vw;
+    z-index: -2;
+}
+img:nth-child(13) {
+    --name: float-up-2;
+    --duration: calc(20s * 2.5);
+    left: 50vw;
+    z-index: -2;
+}
+img:nth-child(18) {
+    --name: float-up-1;
+    --duration: calc(20s * 4.22);
+    right: -1px;
+    z-index: -1;
+}
+img:nth-child(19) {
+    --name: float-up-3;
+    --duration: calc(20s * 5);
+    left: 0vw;
+    z-index: -3;
+}
+img:nth-child(20) {
+    --name: float-up-1;
+    --duration: calc(20s * 1);
+    right: -3px;
+    z-index: -4;
+}
+img:nth-child(21) {
     --name: float-up-1;
     --duration: calc(20s * 0.8);
     left: 59vw;
