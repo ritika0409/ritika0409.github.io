@@ -36,7 +36,6 @@ img {
     animation: var(--name) var(--duration) linear infinite;
     box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.5);
     z-index: -1;
-    opacity: 0.9;
 }
 @media only screen and (max-width: 600px) {
     img {
@@ -138,7 +137,7 @@ img:nth-child(5) {
 }
 img:nth-child(6) {
     --name: float-up-2;
-    --duration: calc(20s * 2);
+    --duration: calc(20s * 0.5);
     left: 15vw;
     z-index: -2;
 }
@@ -198,9 +197,9 @@ img:nth-child(15) {
 }
 img:nth-child(16) {
     --name: float-up-1;
-    --duration: calc(20s * 1);
+    --duration: calc(20s * 5);
     right: -3px;
-    z-index: -1;
+    z-index: -3;
 }
 img:nth-child(17) {
     --name: float-up-1;
@@ -216,7 +215,7 @@ img:nth-child(13) {
 }
 img:nth-child(18) {
     --name: float-up-1;
-    --duration: calc(20s * 4.22);
+    --duration: calc(20s * 2.1);
     right: -1px;
     z-index: -1;
 }
