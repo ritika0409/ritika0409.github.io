@@ -84,9 +84,18 @@ img:nth-child(13) {
 img:nth-child(14) {
     animation-delay: -6s;
 }
+img:nth-child(15) {
+    animation-delay: -7s;
+}
+img:nth-child(16) {
+    animation-delay: -1s;
+}
+img:nth-child(17) {
+    animation-delay: -2s;
+}
 img:nth-child(1) {
     --name: float-up-1;
-    --duration: calc(20s * 1);
+    --duration: calc(20s * 0.6);
     left: 0vw;
     z-index: -1;
 }
@@ -110,8 +119,8 @@ img:nth-child(4) {
 }
 img:nth-child(5) {
     --name: float-up-3;
-    --duration: calc(20s * 3);
-    left: 0vw;
+    --duration: calc(20s * 4);
+    left: 6vw;
     z-index: -3;
 }
 img:nth-child(6) {
@@ -159,7 +168,7 @@ img:nth-child(12) {
 img:nth-child(13) {
     --name: float-up-2;
     --duration: calc(20s * 2.5);
-    right: 0vw;
+    left: 50vw;
     z-index: -2;
 }
 img:nth-child(14) {
@@ -167,6 +176,24 @@ img:nth-child(14) {
     --duration: calc(20s * 3);
     left: 66vw;
     z-index: -1;
+}
+img:nth-child(15) {
+    --name: float-up-3;
+    --duration: calc(20s * 2.3);
+    left: 26vw;
+    z-index: -3;
+}
+img:nth-child(16) {
+    --name: float-up-1;
+    --duration: calc(20s * 1);
+    left: 20vw;
+    z-index: -1;
+}
+img:nth-child(17) {
+    --name: float-up-1;
+    --duration: calc(20s * 0.8);
+    left: 59vw;
+    z-index: -2;
 }
 @keyframes float-up-3 {
     from {
