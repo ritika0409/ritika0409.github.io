@@ -67,10 +67,10 @@ img:nth-child(8) {
     animation-delay: -21s;
 }
 img:nth-child(9) {
-    animation-delay: -24s;
+    animation-delay: -26s;
 }
 img:nth-child(10) {
-    animation-delay: -27s;
+    animation-delay: -21s;
 }
 img:nth-child(11) {
     animation-delay: -2s;
@@ -79,7 +79,7 @@ img:nth-child(12) {
     animation-delay: -7s;
 }
 img:nth-child(13) {
-    animation-delay: -11s;
+    animation-delay: 1s;
 }
 img:nth-child(14) {
     animation-delay: -6s;
@@ -91,7 +91,7 @@ img:nth-child(16) {
     animation-delay: -1s;
 }
 img:nth-child(17) {
-    animation-delay: -2s;
+    animation-delay: 2s;
 }
 img:nth-child(1) {
     --name: float-up-1;
@@ -108,7 +108,7 @@ img:nth-child(2) {
 img:nth-child(3) {
     --name: float-up-2;
     --duration: calc(20s * 2);
-    right: 0vw;
+    left: -1vw;
     z-index: -2;
 }
 img:nth-child(4) {
@@ -186,7 +186,7 @@ img:nth-child(15) {
 img:nth-child(16) {
     --name: float-up-1;
     --duration: calc(20s * 1);
-    left: 20vw;
+    left: -1px;
     z-index: -1;
 }
 img:nth-child(17) {
