@@ -158,7 +158,7 @@ img:nth-child(11) {
 }
 img:nth-child(12) {
     --name: float-up-3;
-    --duration: calc(20s * 1);
+    --duration: calc(20s * 0.7);
     left: 16vw;
     z-index: -3;
 }
