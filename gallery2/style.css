@@ -39,7 +39,7 @@ img {
 }
 @media only screen and (max-width: 600px) {
     img {
-      width: 65vw;
+      width: 70vw;
     }
   }
 img:nth-child(1) {
