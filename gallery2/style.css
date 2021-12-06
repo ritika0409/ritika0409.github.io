@@ -74,7 +74,7 @@ img:nth-child(9) {
     animation-delay: -24s;
 }
 img:nth-child(10) {
-    animation-delay: -27s;
+    animation-delay: -33s;
 }
 img:nth-child(11) {
     animation-delay: -30s;
@@ -150,7 +150,7 @@ img:nth-child(9) {
 }
 img:nth-child(10) {
     --name: float-up-3;
-    --duration: calc(20s * 1.3);
+    --duration: calc(20s * 2.3);
     left: -20vw;
     z-index: -4;
 }
