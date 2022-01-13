@@ -5,16 +5,14 @@
   }
   
 html {
-    background-color: black;
-    animation: shrink var(--duration) var(--delay) linear infinite;
+    background: rgb(2,0,36);
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(173,57,130,1) 32%, rgba(223,0,122,1) 48%);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
     scroll-behavior: smooth;
 }
-.ball{
-    position: absolute;
-    border-radius: 100%;
-    opacity: 0.7;
-    z-index: -9;
-  }
+
 body {
     position: relative;
     width: 100vw;
@@ -23,6 +21,7 @@ body {
     animation: spin var(--duration) var(--delay) linear infinite;
     transform-style: preserve-3d;
     perspective: 25rem;
+    
 }
 
 img {
@@ -31,7 +30,7 @@ img {
     position: absolute;
     top: 1vh;
     left: 0;
-    width: 33vw;
+    width: 25vw;
     transform: translateY(200vh);
     animation: var(--name) var(--duration) linear infinite;
     box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.5);
@@ -97,7 +96,7 @@ img:nth-child(16) {
 img:nth-child(1) {
     --name: float-up-1;
     --duration: calc(20s * 1);
-    left: -10vw;
+    left: 0vw;
     z-index: -3;
 }
 img:nth-child(2) {
@@ -175,7 +174,7 @@ img:nth-child(13) {
 img:nth-child(14) {
     --name: float-up-2;
     --duration: calc(20s * 3);
-    left: 85vw;
+    left: 70vw;
     z-index: -1;
 }
 img:nth-child(15) {
@@ -240,4 +239,15 @@ img:nth-child(16) {
 }
 @media only screen and (max-width: 359px){
     .text-effect{ font-size: 45px; }
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
