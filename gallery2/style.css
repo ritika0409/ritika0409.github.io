@@ -228,14 +228,14 @@ img:nth-child(16) {
 }
 
 @media only screen and (max-width: 990px){
-    .text-effect{ font-size: 100px; }
-}
-@media only screen and (max-width: 767px){
     .text-effect{ font-size: 80px; }
 }
+@media only screen and (max-width: 767px){
+    .text-effect{ font-size: 50px; }
+}
 @media only screen and (max-width: 479px){
-    .text-effect{ font-size: 60px; }
+    .text-effect{ font-size: 40px; }
 }
 @media only screen and (max-width: 359px){
-    .text-effect{ font-size: 45px; }
+    .text-effect{ font-size: 30px; }
 }
