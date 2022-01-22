@@ -1,0 +1,443 @@
+body {
+    background: #2f3238;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
+
+.glow::before,
+.glow::after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient( -45deg, #035f28, #036666, #4c024e, #1d0112, #02136e);
+    background-size: 400%;
+    height: calc(100% + 5px);
+    width: calc(100% + 5px);
+    z-index: -1;
+    animation: change 40s linear infinite;
+}
+
+@keyframes change {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #000000;
+    overflow: hidden;
+}
+
+.background span {
+    width: 14vmin;
+    height: 14vmin;
+    border-radius: 14vmin;
+    backface-visibility: hidden;
+    position: absolute;
+    justify-content: space-around;
+    animation: move;
+    animation-duration: 44;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.background span:nth-child(0) {
+    color: #E45A84;
+    top: 65%;
+    left: 54%;
+    animation-duration: 43s;
+    animation-delay: -53s;
+    transform-origin: -10vw 8vh;
+    box-shadow: 28vmin 0 3.6942249987533495vmin currentColor;
+}
+
+.background span:nth-child(1) {
+    color: #00ffff;
+    top: 74%;
+    left: 4%;
+    animation-duration: 65s;
+    animation-delay: -57s;
+    transform-origin: 6vw 5vh;
+    box-shadow: -28vmin 0 3.598531097306709vmin currentColor;
+}
+
+.background span:nth-child(2) {
+    color: #E45A84;
+    top: 92%;
+    left: 38%;
+    animation-duration: 11s;
+    animation-delay: -48s;
+    transform-origin: -24vw -4vh;
+    box-shadow: -28vmin 0 3.6212258242005673vmin currentColor;
+}
+
+.background span:nth-child(3) {
+    color: #00ffff;
+    top: 41%;
+    left: 62%;
+    animation-duration: 14s;
+    animation-delay: -19s;
+    transform-origin: 21vw 20vh;
+    box-shadow: -28vmin 0 3.604696407033032vmin currentColor;
+}
+
+.background span:nth-child(4) {
+    color: #00ffff;
+    top: 1%;
+    left: 53%;
+    animation-duration: 34s;
+    animation-delay: -55s;
+    transform-origin: 19vw -7vh;
+    box-shadow: -28vmin 0 4.002367465531421vmin currentColor;
+}
+
+.background span:nth-child(5) {
+    color: #00ffff;
+    top: 30%;
+    left: 21%;
+    animation-duration: 12s;
+    animation-delay: -40s;
+    transform-origin: -2vw -5vh;
+    box-shadow: 28vmin 0 3.9246808949787737vmin currentColor;
+}
+
+.background span:nth-child(6) {
+    color: #00ffff;
+    top: 53%;
+    left: 11%;
+    animation-duration: 13s;
+    animation-delay: -57s;
+    transform-origin: -10vw 11vh;
+    box-shadow: 28vmin 0 4.236436354077277vmin currentColor;
+}
+
+.background span:nth-child(7) {
+    color: #FFACAC;
+    top: 21%;
+    left: 17%;
+    animation-duration: 23s;
+    animation-delay: -57s;
+    transform-origin: -19vw -6vh;
+    box-shadow: 28vmin 0 4.1183878497522395vmin currentColor;
+}
+
+.background span:nth-child(8) {
+    color: #E45A84;
+    top: 77%;
+    left: 44%;
+    animation-duration: 26s;
+    animation-delay: -52s;
+    transform-origin: 14vw 23vh;
+    box-shadow: 28vmin 0 3.9680004671886238vmin currentColor;
+}
+
+.background span:nth-child(9) {
+    color: #E45A84;
+    top: 38%;
+    left: 30%;
+    animation-duration: 38s;
+    animation-delay: -35s;
+    transform-origin: -6vw -24vh;
+    box-shadow: 28vmin 0 3.9815927835346576vmin currentColor;
+}
+
+.background span:nth-child(10) {
+    color: #FFACAC;
+    top: 52%;
+    left: 56%;
+    animation-duration: 55s;
+    animation-delay: -6s;
+    transform-origin: 4vw 16vh;
+    box-shadow: -28vmin 0 4.436246358860372vmin currentColor;
+}
+
+.background span:nth-child(11) {
+    color: #00ffff;
+    top: 71%;
+    left: 47%;
+    animation-duration: 25s;
+    animation-delay: -26s;
+    transform-origin: -13vw -6vh;
+    box-shadow: 28vmin 0 3.539305149268692vmin currentColor;
+}
+
+.background span:nth-child(12) {
+    color: #00ffff;
+    top: 21%;
+    left: 78%;
+    animation-duration: 32s;
+    animation-delay: -13s;
+    transform-origin: 3vw 6vh;
+    box-shadow: 28vmin 0 3.711665362636064vmin currentColor;
+}
+
+.background span:nth-child(13) {
+    color: #E45A84;
+    top: 8%;
+    left: 40%;
+    animation-duration: 59s;
+    animation-delay: -15s;
+    transform-origin: 6vw 14vh;
+    box-shadow: 28vmin 0 3.744365690458584vmin currentColor;
+}
+
+.background span:nth-child(14) {
+    color: #FFACAC;
+    top: 94%;
+    left: 40%;
+    animation-duration: 53s;
+    animation-delay: -50s;
+    transform-origin: 13vw 17vh;
+    box-shadow: 28vmin 0 3.72056650594856vmin currentColor;
+}
+
+.background span:nth-child(15) {
+    color: #E45A84;
+    top: 44%;
+    left: 72%;
+    animation-duration: 22s;
+    animation-delay: -14s;
+    transform-origin: -6vw 1vh;
+    box-shadow: -28vmin 0 3.658651351628132vmin currentColor;
+}
+
+.background span:nth-child(16) {
+    color: #00ffff;
+    top: 17%;
+    left: 42%;
+    animation-duration: 56s;
+    animation-delay: -56s;
+    transform-origin: -23vw -8vh;
+    box-shadow: -28vmin 0 3.9211424697521706vmin currentColor;
+}
+
+.background span:nth-child(17) {
+    color: #FFACAC;
+    top: 18%;
+    left: 45%;
+    animation-duration: 20s;
+    animation-delay: -47s;
+    transform-origin: -6vw 12vh;
+    box-shadow: 28vmin 0 3.704568814833231vmin currentColor;
+}
+
+.background span:nth-child(18) {
+    color: #00ffff;
+    top: 6%;
+    left: 65%;
+    animation-duration: 62s;
+    animation-delay: -3s;
+    transform-origin: 14vw 23vh;
+    box-shadow: -28vmin 0 3.783028250530407vmin currentColor;
+}
+
+.background span:nth-child(19) {
+    color: #00ffff;
+    top: 36%;
+    left: 43%;
+    animation-duration: 54s;
+    animation-delay: -25s;
+    transform-origin: 11vw -15vh;
+    box-shadow: -28vmin 0 4.213445644311558vmin currentColor;
+}
+
+.background span:nth-child(20) {
+    color: #E45A84;
+    top: 20%;
+    left: 42%;
+    animation-duration: 27s;
+    animation-delay: -37s;
+    transform-origin: -4vw -10vh;
+    box-shadow: -28vmin 0 3.822812710041336vmin currentColor;
+}
+
+.background span:nth-child(21) {
+    color: #E45A84;
+    top: 47%;
+    left: 99%;
+    animation-duration: 45s;
+    animation-delay: -11s;
+    transform-origin: -16vw 8vh;
+    box-shadow: -28vmin 0 4.481445444421106vmin currentColor;
+}
+
+.background span:nth-child(22) {
+    color: #FFACAC;
+    top: 26%;
+    left: 16%;
+    animation-duration: 41s;
+    animation-delay: -29s;
+    transform-origin: 11vw -12vh;
+    box-shadow: 28vmin 0 3.8515547309404097vmin currentColor;
+}
+
+.background span:nth-child(23) {
+    color: #00ffff;
+    top: 64%;
+    left: 38%;
+    animation-duration: 38s;
+    animation-delay: -38s;
+    transform-origin: 6vw -13vh;
+    box-shadow: 28vmin 0 4.28438585690645vmin currentColor;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+.text-effect {
+    color: #fff6a9;
+    font-family: 'Sacramento';
+    font-size: 120px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 5vw;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 20px auto 0;
+    padding-bottom: 50px;
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    position: relative;
+    /*     animation: animate 2s ease-in-out infinite; */
+}
+
+
+/* @keyframes animate{
+    20%, 24%, 55%{
+        color: #111;
+        text-shadow: none;
+    }
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100%{
+        color: #fff6a9;
+        text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    }
+} */
+
+@media only screen and (max-width: 990px) {
+    .text-effect {
+        font-size: 80px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .text-effect {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .text-effect {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 359px) {
+    .text-effect {
+        font-size: 30px;
+    }
+}
+
+.text-title {
+    color: yellow;
+    font-family: 'Dongle', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    text-shadow: [x-offset] [y-offset] [blur-radius] [color];
+    /* text-transform: capitalize;
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    position: relative; */
+}
+
+@media only screen and (max-width: 600px) {
+    .text-title {
+        font-size: x-large;
+    }
+}
+
+.cards-list {
+    z-index: 0;
+    left: 10%;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+}
+
+.card {
+    margin: 30px auto;
+    width: 280px;
+    height: 280px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    transition: 0.4s;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+@media screen and (min-width: 1771px) {
+    .card {
+        width: 280px;
+        height: 280px;
+        margin: 10px 10px 10px 10px;
+    }
+}
+
+@media screen and (max-width: 1770px) {
+    .card {
+        width: 240px;
+        height: 240px;
+        margin: 10px 10px 10px 10px;
+    }
+}
+
+.card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+}
+
+.card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+}
+
+.card .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -80px;
+    height: 40px;
+}
+
+.card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+@media all and (max-width: 500px) {
+    .card-list {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+    }
+}
