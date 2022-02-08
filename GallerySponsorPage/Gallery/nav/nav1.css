@@ -88,7 +88,7 @@ a:hover {
 }
 @media only screen and (max-width: 600px) {
     .images img {
-      width: 70vw;
+      width: 50%;
     }
   }
 img:nth-child(1) {
@@ -268,7 +268,7 @@ img:nth-child(16) {
     font-weight: 700;
     text-align: center;
     text-transform: capitalize;
-    top: 30px;
+    top: 40px;
     justify-content: center;
     text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
     position: relative;
