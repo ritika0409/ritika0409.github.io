@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Mochiy+Pop+P+One&display=swap');
+
 @font-face {
   font-family: 'Montserrat';
   src: url('fonts/Montserrat-Black.eot');
@@ -34,7 +36,6 @@
   font-weight: 300;
   font-style: normal;
 }
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Mochiy+Pop+P+One&display=swap');
 :root {
   --duration: 20s;
   --delay: 20s;
@@ -263,7 +264,7 @@ img:nth-child(16) {
 .text-effect{
     color: #fff6a9;
     font-family: 'Mochiy Pop P One', sans-serif;
-    font-size: 4.5vw;
+    font-size: 4.2vw;
     font-weight: 700;
     text-align: center;
     text-transform: capitalize;
