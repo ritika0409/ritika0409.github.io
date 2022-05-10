@@ -7,26 +7,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
-<h2>ColorBlindnessTest</h2>
-<p>Click on Submit button to check your answer</p>
-<br>
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <img src="assets/images/1.jpg" alt="7" style="width:100%">
-      <div class="container">
-        <p>
-            <form>
-                <input  type="number" id="num1" placeholder="Enter a number"/>
-            </form>
-          </p>
-          <p id="result1"></p>
-        <p><button class="button" onclick="input1()">Submit</button></p>
+  <h2>Color Blindness Test</h2>
+  <p>Click on Submit button to check your answer
+  <br><br>
+  <a href="index.html">Click here to go back to Home Page</a></p>
+  <br>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="assets/images/1.jpg" alt="7" style="width:100%">
+        <div class="container">
+          <p>
+              <form>
+                  <input  type="number" id="num1" placeholder="Enter a number"/>
+              </form>
+            </p>
+            <p id="result1"></p>
+          <p><button class="button" onclick="input1()" id="b1">Submit</button></p>
+        </div>
       </div>
     </div>
-  </div>
 
   <div class="column">
     <div class="card">
@@ -105,87 +108,4 @@
     </div>
   </div>
 </body>
-<script>
-
-    function input1(){
-    var ans=document.getElementById("num1").value;
-        if(ans=="")
-        document.getElementById("result1").innerHTML="No number entered";
-        else 
-        {
-            if(ans==7)
-            document.getElementById("result1").innerHTML ="Correct";
-            
-            else
-            document.getElementById("result1").innerHTML ="Incorrect. The number pictured above is actually 7. Most color blind people won't see this number clearly.";
-        }
-    }
-    function input2(){
-    var ans=document.getElementById("num2").value;
-        if(ans=="")
-        document.getElementById("result2").innerHTML="No number entered";
-        else 
-        {
-            if(ans==26)
-            document.getElementById("result2").innerHTML ="Correct";
-            
-            else
-            document.getElementById("result2").innerHTML ="Incorrect. The number pictured above is actually 26. People that are red color blind see only a 6, green color blind people may see only a 2.";
-        }
-    }
-    function input3(){
-    var ans=document.getElementById("num3").value;
-        if(ans=="")
-        document.getElementById("result3").innerHTML="No number entered";
-        else 
-        {
-            if(ans==15)
-            document.getElementById("result3").innerHTML ="Correct";
-            
-            else
-            document.getElementById("result3").innerHTML ="Incorrect. The number pictured above is actually 15. People with red green color blindness see the number 17.";
-        }
-    }
-    function input4(){
-    var ans=document.getElementById("num4").value;
-        if(ans=="")
-        document.getElementById("result4").innerHTML="No number entered";
-        else 
-        {
-            if(ans==73)
-            document.getElementById("result4").innerHTML ="Correct";
-            
-            else
-            document.getElementById("result4").innerHTML ="Incorrect. The number pictured above is actually 73. Most color blind people won't see this number clearly.";
-        }
-    }
-    function input5(){
-    var ans=document.getElementById("num5").value;
-        if(ans=="")
-        document.getElementById("result5").innerHTML="No number entered";
-        else 
-        {
-            if(ans==12)
-            document.getElementById("result5").innerHTML ="Correct. Everyone should see the number 12 including people that are color blind.";
-            
-            else
-            document.getElementById("result5").innerHTML ="Incorrect. Everyone should see the number 12 including people that are color blind.";
-        }
-    }
-    function input6(){
-    var ans=document.getElementById("num6").value;
-        if(ans=="")
-        document.getElementById("result6").innerHTML="No number entered";
-        else 
-        {
-            if(ans==8)
-            document.getElementById("result6").innerHTML ="Correct";
-            
-            else
-            document.getElementById("result6").innerHTML ="Incorrect. The number pictured above is actually 8. If you see a 3, you are most likely red green color blind. People that are total color blind will see nothing.";
-        }
-    }
-
-
-</script>
 </html>
