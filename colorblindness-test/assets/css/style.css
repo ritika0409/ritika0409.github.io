@@ -14,7 +14,8 @@ body {
   position: absolute;
   width: 600px;
   height: 300px;
-  margin: 12% 30%;
+  margin-left: 28vw;
+  margin-top: 20vh;
   text-align: center;
   
 }
@@ -43,11 +44,9 @@ body {
 }
 /*resposive*/
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .welcome-text {
-    width: 100%;
     height: auto;
-    margin: 30% 0;
   }
   .welcome-text h1 {
     font-size: 30px;
