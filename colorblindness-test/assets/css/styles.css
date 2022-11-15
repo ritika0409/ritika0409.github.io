@@ -1,11 +1,19 @@
 html {
   box-sizing: border-box;
 }
-
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+}
+body{
+  background-color: hsl(240, 100%, 90%);
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  background-blend-mode: lighten;
+
 }
 h2 {
   text-align: center;
@@ -15,6 +23,11 @@ h2 {
 p {
   text-align: center;
   font-family: "Roboto";
+}
+a{
+  text-align: center;
+  font-family: "Roboto";
+  color: #000;
 }
 .column {
   float: left;
