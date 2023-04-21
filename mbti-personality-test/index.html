@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>MBTI Personality Test</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#home">MBTI Personality Test</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#mbti">What is MBTI?</a></li>
+                    <li><a href="#analysts">Personality Types</a></li>
+                    <li><button class="custom-btn btn-12" onclick="start()"><span>Let's go!</span><span>Start Test</span></button></li>
+                </ul>
+            </div>
+            <span class="navTrigger" onclick="nav()">
+                <button class="custom-btn btn-12" onclick="start()"><span>Let's go!</span><span>Start Test</span></button>
+            </span>
+        </div>
+    </nav>
+    <main class="home">
+        
+        <section id="home">
+            
+                <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="assets/1.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/2.jpg"  alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/1.jpg"  alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/2.jpg"  alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/1.jpg"  alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/2.jpg"  alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class='line'>
+                <h3 class='lineUp'>MBTI Personality Test</h3>
+                <p class='lineUp'>Only 5 minutes to get an accurate description of who you are and why you do things the way you do.</p>
+                <br />
+                <div class="frame ">
+                    <button class="custom-btn btn-12" onclick="start()"><span>Let's go!</span><span>Start Test</span></button>
+                </div>
+            </div>
+        </section>
+        <section id="mbti">
+            <div class='line'>
+                <h3 class='lineUp'>Myers Briggs Type Indicator (MBTI)</h3>
+                <br />
+                <p class='lineUp'>In personality typology, the Myers Briggs Type Indicator (MBTI) is an introspective self-report 
+                    questionnaire indicating differing psychological preferences in how people perceive the world 
+                    and make decisions. The test attempts to assign a value to each of four categories: introversion 
+                    or extraversion, sensing or intuition, thinking or feeling, and judging or perceiving.
+                    One letter from each category is taken to produce a four-letter test result, such as "INTJ" or "ESFP".</p>
+            </div>
+        </section>
+        <section id="analysts">
+            <div class="type-heading">
+                <h3>Types of Personality</h3>
+                <h4>Analysts</h4>
+            </div>
+            
+            <div class="page-content">
+                <div class="card" id="intj">
+                    <div class="content">
+                        <h2 class="title">Architect</h2>
+                        <h3>INTJ-A / INTJ-T</h3>
+                        <p class="copy">Imaginative and strategic thinkers, with a plan for everything.</p>
+                        <a href="https://www.16personalities.com/intj-personality" target="_blank">Read more</a>
+                    </div>
+                </div>
+                <div class="card" >
+                    <div class="content">
+                        <h2 class="title">Logician</h2>
+                        <h3>INTP-A/INTP-T</h3>
+                        <p class="copy">Innovative inventors with an unquenchable thirst for knowledge.</p>
+                        <a href="https://www.16personalities.com/intp-personality" target="_blank">Read more</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h2 class="title">Commander</h2>
+                        <h3>ENTJ-A/ENTJ-T</h3>
+                        <p class="copy">Bold, imaginative and strong-willed leaders, always finding a way or making one.</p>
+                        <a href="https://www.16personalities.com/entj-personality" target="_blank">Read more</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h2 class="title">Debater</h2>
+                        <h3>ENTP-A/ENTP-T</h3>
+                        <p class="copy">Smart and curious thinkers who resist an intellectual challenge.</p>
+                        <a href="https://www.16personalities.com/entp-personality" target="_blank">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="diplomats">
+            <div class="type-heading">
+                <h3>Diplomats</h3>
+            </div>
+            <div class="page-content">
+                <div class="card">
+                    <div class="content">
+                        <h2 class="title">Advocate</h2>
+                        <h3>INFJ-A/ INFJ-T</h3>
+                        <p class="copy">Quiet and mystical, yet very
+                            inspiring and tireless idealists.</p>
+                        <a href="https://www.16personalities.com/infj-personality" target="_blank">Read more</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h2 class="title">Mediator</h2>
+                        <h3>INFP-A/INFP-T</h3>
+                        <p class="copy">Poetic, kind and altruistic people,
+                            always eager to help a good cause.</p>
+                        <a href="https://www.16personalities.com/infp-personality" target="_blank">Read more</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h2 class="title">Protagonist</h2>
+                        <h3>ENFJ-A/ENFJ-T</h3>
+                        <p class="copy">Charismatic and inspiring leaders,
+                            able to mesmerize their listeners.</p>
+                        <a href="https://www.16personalities.com/enfj-personality" target="_blank">Read more</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h2 class="title">Campaigner</h2>
+                        <h3>ENFP-A/ENFP-T</h3>
+                        <p class="copy">Enthusiastic, creative and sociable
+                            free spirits, who can always find a
+                            reason to smile.</p>
+                        <a href="https://www.16personalities.com/enfp-personality" target="_blank">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sentinels">
+            <div class="type-heading">
+                <h3>Sentinels</h3>
+            </div>
+            <div class="page-content">
+                <div class="card">
+                    <div class="content">
+                        <h2 class="title">Logistician</h2>
+                        <h3>ISTJ-A/ISTJ-T</h3>
+                        <p class="copy">Practical and fact-minded
+                            individuals, whose reliability
+                            cannot be doubted.</p>
+                        <a href="https://www.16personalities.com/istj-personality" target="_blank">Read more</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h2 class="title">Defender</h2>
+                        <h3>ISFJ-A/ISFJ-T</h3>
+                        <p class="copy">
+                            Very dedicated and warm
+                            protectors, always ready to defend
+                            their loved ones.</p>
+                        <a href="https://www.16personalities.com/isfj-personality" target="_blank">Read more</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h2 class="title">Executive</h2>
+                        <h3>ESTI-A/ESTJ-T</h3>
+                        <p class="copy">Excellent administrators, unsurpassed at managing things -
+                            or people.</p>
+                        <a href="https://www.16personalities.com/estj-personality" target="_blank">Read more</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h2 class="title">Consul</h2>
+                        <h3>ESFJ-A/ESFJ-T</h3>
+                        <p class="copy">Extraordinarily caring, social and
+                            popular people, always eager to
+                            help.</p>
+                        <a href="https://www.16personalities.com/esfj-personality" target="_blank">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="explorers">
+            <div class="type-heading">
+                <h3>Explorers</h3>
+            </div>
+            <div class="page-content">
+                <div class="card">
+                    <div class="content">
+                        <h2 class="title">Virtuoso</h2>
+                        <h3>ISTP-A/ISTP-T</h3>
+                        <p class="copy">Bold and practical experimenters,
+                            masters of all kinds of tools.</p>
+                        <a href="https://www.16personalities.com/infp-personality" target="_blank">Read more</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h2 class="title">Adventurer</h2>
+                        <h3>ISFP-A/ISFP-T</h3>
+                        <p class="copy">Flexible and charming artists,
+                            always ready to explore and
+                            experience something new.</p>
+                        <a href="https://www.16personalities.com/isfp-personality" target="_blank">Read more</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h2 class="title">Entrepreneur</h2>
+                        <h3>ESTP-A/ESTP-T</h3>
+                        <p class="copy">Smart, energetic and very
+                            perceptive people, who truly enjoy
+                            living on the edge.</p>
+                        <a href="https://www.16personalities.com/estp-personality" target="_blank">Read more</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h2 class="title">Entertainer</h2>
+                        <h3>ESFP-A/ESFP-T</h3>
+                        <p class="copy">Spontaneous, energetic and
+                            enthusiastic people - life is never
+                            boring around them.</p>
+                        <a href="https://www.16personalities.com/esfp-personality" target="_blank">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <script>
+        function start(){
+            window.open("test.html", "_self");
+        }
+    </script>
+</body>
+</html>

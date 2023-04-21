@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
+    <title>MBTI Personality Test</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html#home">MBTI Personality Test</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#mbti">What is MBTI?</a></li>
+                    <li><a href="index.html#analysts">Personality Types</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+            </span>
+        </div>
+    </nav>
+    <div class="question-container">
+
+    <div class="container" id="questions">
+        <ol>
+            <li><strong>At a party do you:</strong><br>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q1" value="e" required>
+                        Interact with many, including strangers
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q1" value="i" >
+                        Interact with a few, known to you
+                    </label>
+                </div>
+            </li>
+    
+            <li><strong>Are you more:</strong><br>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q2" value="s">
+                        Realistic than speculative
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q2" value="n">
+                        Speculative than realistic
+                    </label>
+                </div>
+            </li>
+    
+    
+            <li><strong>Are you more impressed by:</strong><br>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q4" value="t">
+                        Principles
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q4" value="f">
+                        Emotions
+                    </label>
+                </div>
+            </li>
+    
+            <li><strong>Are more drawn toward the:</strong><br>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q5" value="t">
+                        Convincing
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q5" value="f">
+                        Touching
+                    </label>
+                </div>
+            </li>
+    
+            <li><strong>Do you prefer to work:</strong><br>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q6" value="j">
+                        To deadlines
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q6" value="p">
+                        Just “whenever”
+                    </label>
+                </div>
+            </li>
+    
+            <li><strong>Do you tend to choose:</strong><br>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q7" value="j">
+                        Rather carefully
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q7" value="p">
+                        Somewhat impulsively
+                    </label>
+                </div>
+            </li>
+    
+            <li><strong>At parties do you:</strong><br>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q8" value="e">
+                        Stay late, with increasing energy
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q8" value="i">
+                        Leave early with decreased energy
+                    </label>
+                </div>
+            </li>
+    
+            <li><strong>Are you more attracted to:</strong><br>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q9" value="s">
+                        Sensible people
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q9" value="n">
+                        Imaginative people
+                    </label>
+                </div>
+            </li>
+    
+            <li><strong>Are you more interested in:</strong><br>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q10" value="s">
+                        What is actual
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q10" value="n">
+                        What is possible
+                    </label>
+                </div>
+            </li>
+    
+            <li><strong>In judging others are you more swayed by:</strong><br>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q11" value="t">
+                        Laws than circumstances
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q11" value="f">
+                        Circumstances than laws
+                    </label>
+                </div>
+            </li>
+    
+            <li><strong>In approaching others is your inclination to be somewhat:</strong><br>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q12" value="t">
+                        Objective
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q12" value="f">
+                        Personal
+                    </label>
+                </div>
+            </li>
+    
+            <li><strong>Are you more:</strong><br>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q13" value="j">
+                        Punctual
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q13" value="p">
+                        Leisurely
+                    </label>
+                </div>
+            </li>
+
+    
+            <li><strong>In phoning do you:</strong><br>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q22" value="e">
+                        Rarely question that it will all be said
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q22" value="i">
+                        Rehearse what you’ll say
+                    </label>
+                </div>
+            </li>
+    
+            <li><strong>Facts:</strong><br>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q23" value="s">
+                        Speak for themselves
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q23" value="n">
+                        Illustrate principles
+                    </label>
+                </div>
+            </li>
+    
+            <li><strong>Are visionaries:</strong><br>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q24" value="s">
+                        somewhat annoying
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q24" value="n">
+                        rather fascinating
+                    </label>
+                </div>
+            </li>
+    
+            <li><strong>Are you more often:</strong><br>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q25" value="t">
+                        a cool-headed person
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q25" value="f">
+                        a warm-hearted person
+                    </label>
+                </div>
+            </li>
+    
+            <li><strong>Is it worse to be:</strong><br>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q26" value="t">
+                        unjust
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q26" value="f">
+                        merciless
+                    </label>
+                </div>
+            </li>
+    
+            <li><strong>Should one usually let events occur:</strong><br>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q27" value="j">
+                        by careful selection and choice
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q27" value="p">
+                        randomly and by chance
+                    </label>
+                </div>
+            </li>
+    
+            <li><strong>Do you feel better about:</strong><br>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q28" value="j">
+                        having purchased
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q28" value="p">
+                        having the option to buy
+                    </label>
+                </div>
+            </li>
+    
+            <li><strong>In company do you:</strong><br>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q29" value="e">
+                        initiate conversation
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="q29" value="i">
+                        wait to be approached
+                    </label>
+                </div>
+            </li>
+    
+    
+
+    
+    
+        </ol>
+    
+        <p id="scroll-down" class="hidden text-center">(<i>scroll down</i>)</p>    
+        <p class="text-center"><button id="submit" class="btn btn-primary btn-lg">Calculate Results</button></p>
+    
+        <div id="results" class="text-center hidden">
+            <br><br>
+            <h2 id="type"></h2>
+            <p id="type-details" class="type-description hidden">
+                <strong id="type-title"></strong><br>
+                <strong><span id="type-percentage"></span> of population</strong><br>
+                <span id="type-description"></span><br>
+            </p>
+            <p class="pull-left"><span class="badge">E</span> (<span id="eScore"></span>%)</p>
+            <p class="pull-right">(<span id="iScore"></span>%) <span class="badge">I</span></p>
+            <div class="progress">
+                <div id="eiChart" class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+                <div class="center-bar"></div>
+            </div>
+            <br class="clearfix">
+            
+            <p class="pull-left"><span class="badge">S</span> (<span id="sScore"></span>%)</p>
+            <p class="pull-right">(<span id="nScore"></span>%) <span class="badge">N</span></p>
+            <div class="progress">
+                <div id="snChart" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+                <div class="center-bar"></div>
+            </div>
+            <br class="clearfix">
+            
+            <p class="pull-left"><span class="badge">T</span> (<span id="tScore"></span>%)</p>
+            <p class="pull-right">(<span id="fScore"></span>%) <span class="badge">F</span></p>
+            <div class="progress">
+                <div id="tfChart" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+                <div class="center-bar"></div>
+            </div>
+            <br class="clearfix">
+            
+            <p class="pull-left"><span class="badge">J</span> (<span id="jScore"></span>%)</p>
+            <p class="pull-right">(<span id="pScore"></span>%) <span class="badge">P</span></p>
+            <div class="progress">
+                <div id="jpChart" class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+                <div class="center-bar"></div>
+            </div>
+            <br class="clearfix">
+        </div>
+        
+    
+    </div>
+            
+</div>
+    <script>
+        
+const MbtiModule = (function() {
+	let types = {
+		ISTJ: {title: "The Logician", percentage: "13.7%", description: "Dutiful, Practical, Logical, Methodical"},
+		ISFJ: {title: "The Defender", percentage: "12.7%", description: "Dutiful, Practical, Supportive, Meticulous"},
+		INFJ: {title: "The Advocate", percentage: "1.7%", description: "Devoted, Innovative, Idealistic, Compassionate"},
+		INTJ: {title: "The Architect", percentage: "1.4%", description: "Independent, Innovative, Analytical, Purposeful"},
+		ISTP: {title: "The Problem-Solver", percentage: "6.4%", description: "Expedient, Practical, Objective, Adaptable"},
+		ISFP: {title: "The Harmonizer", percentage: "6.1%", description: "Tolerant, Realistic, Harmonious, Adaptable"},
+		INFP: {title: "The Humanist", percentage: "3.2%", description: "Insightful, Innovative, Idealistic, Adaptable"},
+		INTP: {title: "The Conceptualizer", percentage: "2.4%", description: "Questioning, Innovative, Objective, Abstract"},
+		ESTP: {title: "The Activist", percentage: "5.8%", description: "Energetic, Practical, Pragmatic, Spontaneous"},
+		ESFP: {title: "The Fun-Lover", percentage: "8.7%", description: "Spontaneous, Practical, Friendly, Harmonious"},
+		ENFP: {title: "The Enthusiast", percentage: "6.3%", description: "Optimistic, Innovative, Compassionate, Versatile"},
+		ENTP: {title: "The Entrepreneur", percentage: "2.8%", description: "Risk-Taking, Innovative, Outgoing, Adaptable"},
+		ESTJ: {title: "The Coordinator", percentage: "10.4%", description: "Organized, Practical, Logical, Outgoing"},
+		ESFJ: {title: "The Supporter", percentage: "12.6%", description: "Friendly, Practical, Loyal, Organized"},
+		ENFJ: {title: "The Developer", percentage: "2.8%", description: "Friendly, Innovative, Supportive, Idealistic"},
+		ENTJ: {title: "The Reformer", percentage: "2.9%", description: "Determined, Innovative, Strategic, Outgoing"}
+	};
+	let e, i, s, n, t, f, j, p;
+	let type;
+	
+	function resetScores() {
+		e = i = s = n = t = f = j = p = 0;
+		type = "";
+	}
+	
+	function getScores() {
+		const inputs = document.getElementsByTagName("input");
+		Array.prototype.forEach.call(inputs, function(input) {
+			if (input.checked) {
+				switch(input.value) {
+					case 'e': e++; break;
+					case 'i': i++; break;
+					case 's': s++; break;
+					case 'n': n++; break;
+					case 't': t++; break;
+					case 'f': f++; break;
+					case 'j': j++; break;
+					case 'p': p++; break;
+				}
+			}
+		});
+	}
+	
+	function calculatePercentages() {
+		e = Math.floor(e / 4 * 100);
+		i = Math.floor(i / 4 * 100);
+		s = Math.floor(s / 5 * 100);
+		n = Math.floor(n / 5 * 100);
+		t = Math.floor(t / 6 * 100);
+		f = Math.floor(f / 6 * 100);
+		j = Math.floor(j / 5 * 100);
+		p = Math.floor(p / 5 * 100);
+	}
+	
+	function createCharts() {
+		document.querySelector("#eScore").innerHTML = e;
+		document.querySelector("#iScore").innerHTML = i;
+		document.querySelector("#sScore").innerHTML = s;
+		document.querySelector("#nScore").innerHTML = n;
+		document.querySelector("#tScore").innerHTML = t;
+		document.querySelector("#fScore").innerHTML = f;
+		document.querySelector("#jScore").innerHTML = j;
+		document.querySelector("#pScore").innerHTML = p;
+		
+		document.querySelector("#eiChart").style.marginLeft = i / 2 + "%";
+		document.querySelector("#snChart").style.marginLeft = n / 2 + "%";
+		document.querySelector("#tfChart").style.marginLeft = f / 2 + "%";
+		document.querySelector("#jpChart").style.marginLeft = p / 2 + "%";
+	}
+	
+	function showResults() {
+        if(!e && !t &&!s && !j && !i && !n && !f && !p){
+            alert("You have not asnwered any question")
+        }
+        if((e+s+t+j+i+n+f+p)<25){
+            alert("Please answer more questions")
+        }
+        else{
+            type += (e >= i) ? "E" : "I";
+            type += (s >= n) ? "S" : "N";
+            type += (t >= f) ? "T" : "F";
+            type += (j >= p) ? "J" : "P";
+            document.querySelector("#type").innerHTML = type;
+            document.querySelector("#type-title").innerHTML = types[type].title;
+            document.querySelector("#type-percentage").innerHTML = types[type].percentage;
+            document.querySelector("#type-description").innerHTML = types[type].description;
+            document.querySelector("#type-details").classList.remove("hidden");
+            document.querySelector("#scroll-down").classList.remove("hidden");
+            document.querySelector("#results").classList.remove("hidden");
+        }
+	}
+	
+	return {
+		processForm: function() {
+			resetScores();
+			getScores();
+			calculatePercentages();
+			createCharts();
+			showResults();
+		}
+	};
+})();
+
+document.querySelector("#submit").addEventListener("click", function() { MbtiModule.processForm(); });
+    </script>
+</body>
+</html>
