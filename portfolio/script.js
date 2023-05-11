@@ -1,40 +1,33 @@
-$(document).ready(function(){
-
-  $('#menu').click(function(){
-    $(this).toggleClass('fa-times');
-    $('header').toggleClass('toggle');
+$(document).ready(function () {
+  $("#menu").click(function () {
+    $(this).toggleClass("fa-times");
+    $("header").toggleClass("toggle");
   });
 
-  $(window).on('scroll load',function(){
+  $(window).on("scroll load", function () {
+    $("#menu").removeClass("fa-times");
+    $("header").removeClass("toggle");
 
-    $('#menu').removeClass('fa-times');
-    $('header').removeClass('toggle');
-
-    if($(window).scrollTop() > 0){
-      $('.top').show();
-    }else{
-      $('.top').hide();
+    if ($(window).scrollTop() > 0) {
+      $(".top").show();
+    } else {
+      $(".top").hide();
     }
-
   });
 
-  // smooth scrolling 
+  // smooth scrolling
 
-  $('a[href*="#"]').on('click',function(e){
-
+  $('a[href*="#"]').on("click", function (e) {
     e.preventDefault();
 
-    $('html, body').animate({
-
-      scrollTop : $($(this).attr('href')).offset().top,
-
-    },
-      500, 
-      'linear'
+    $("html, body").animate(
+      {
+        scrollTop: $($(this).attr("href")).offset().top,
+      },
+      500,
+      "linear"
     );
-
   });
-
 });
 // Some random colors
 const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
@@ -51,7 +44,7 @@ for (let i = 0; i < numBalls; i++) {
   ball.style.transform = `scale(${Math.random()})`;
   ball.style.width = `${Math.random()}em`;
   ball.style.height = ball.style.width;
-  
+
   balls.push(ball);
   document.body.append(ball);
 }
@@ -60,21 +53,20 @@ for (let i = 0; i < numBalls; i++) {
 balls.forEach((el, i, ra) => {
   let to = {
     x: Math.random() * (i % 2 === 0 ? -11 : 11),
-    y: Math.random() * 12
+    y: Math.random() * 12,
   };
 
   let anim = el.animate(
     [
       { transform: "translate(0, 0)" },
-      { transform: `translate(${to.x}rem, ${to.y}rem)` }
+      { transform: `translate(${to.x}rem, ${to.y}rem)` },
     ],
     {
       duration: (Math.random() + 1) * 2000, // random duration
       direction: "alternate",
       fill: "both",
       iterations: Infinity,
-      easing: "ease-in-out"
+      easing: "ease-in-out",
     }
   );
 });
-
